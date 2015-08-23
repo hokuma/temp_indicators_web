@@ -1,0 +1,16 @@
+{
+  "name": "temp_indicators_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hokuma",
+  "dependencies": {
+    "aws-sdk": "^2.1.46",
+    "express": "^4.13.3",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {}
+}
