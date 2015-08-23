@@ -1,8 +1,6 @@
 var Aws = require('aws-sdk');
 var express = require('express');
 var app = express();
-var accessKeyId = process.env.ACCESS_KEY;
-var secretAccessKey = process.env.SECRET_ACCESS_KEY;
 
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/views');
@@ -14,9 +12,7 @@ app.get('/', function(req, res) {
 
 app.get('/temps.json', function(req, res) {
   var dynamodb = new Aws.DynamoDB({
-    region: 'ap-northeast-1',
-    accessKeyId: accessKeyId,
-    secretAccessKey: secretAccessKey
+    region: 'ap-northeast-1'
   });
 
   var now = new Date();
